@@ -35,7 +35,7 @@ file i/o or database access in this exercise.
 Next, do an npm install of the packages you will need for testing.  These are to be installed
 as dev dependencies.  You will need the following packages:  
   
-mocha 
+mocha  
 chai  
 chai-http  
 zombie  
