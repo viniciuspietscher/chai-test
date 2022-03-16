@@ -3,8 +3,10 @@
 This is the starter repository for an exercise on how to do automated testing.
 
 It contains code for a crude front end that makes AJAX calls to the back end.
-These calls (1) add an entry to an array of people, where each entry must have
-a name and an age; (2) retrieves the array of people, and (3) retrieve a specific
+You can bring up the front end by running npm run dev and then by going to
+localhost:3000 in your browser.  The AJAX calls
+(1) add an entry to an array of people, where each entry must have
+a name and an age; (2) retrieve the array of people, and (3) retrieve a specific
 entry for the array of people.  To add an entry, the front end sends a post request
 to the URI /api/v1/people where
 the body of the request is a json document containing the name (a string), and the
