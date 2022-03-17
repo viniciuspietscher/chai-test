@@ -2,8 +2,18 @@
 
 This is the starter repository for an exercise on how to do automated testing.
 
-It contains code for a crude front end that makes AJAX calls to the back end.
-You can bring up the front end by running npm run dev and then by going to
+Fork the repository and clone it.  Then create a branch called assignment where you
+will do your work.  When you have finished your work, push the assignment branch
+to your repository and create a pull request.  When you turn in your assignment,
+include a link to your pull request.
+
+This package contains code for a crude front end that makes AJAX calls to the back end.
+You can bring up the front end by switching to the directory created by the clone, running 
+```
+npm install
+npm run dev 
+```
+and then by going to
 localhost:3000 in your browser.  The AJAX calls
 (1) add an entry to an array of people, where each entry must have
 a name and an age; (2) retrieve the array of people, and (3) retrieve a specific
@@ -24,11 +34,6 @@ an error message and a 404 result code is returned.
 The application does not work at present because the routes for each of these operations
 have not been implemented.  Implementing them is part of the exercise.
 
-Fork the repository and clone it.  Then create a branch called assignment where you
-will do your work.  When you have finished your work, push the assignment branch
-to your repository and create a pull request.  When you turn in your assignment,
-include a link to your pull request.
-
 First, implement the routes for adding a new people entry, retrieving the list of
 people entries, and retrieving a single person entry.  People entries are stored in
 the people array, which starts out empty.  They are not persisted.  There is no
@@ -42,6 +47,11 @@ chai
 chai-http  
 zombie  
 
+So you will need to do:
+```
+npm install mocha --save-dev
+```
+and you will enter a similar command for each of the other three packages.  
 Next, edit the test line in the scripts section of your package.json file.  It should say:
 
 ```
