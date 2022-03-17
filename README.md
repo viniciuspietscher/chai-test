@@ -2,7 +2,7 @@
 
 This is the starter repository for an exercise on how to do automated testing.
 
-Fork the repository and clone it.  Then create a branch called assignment where you
+Fork the repository and clone your fork.  Then create a branch called assignment where you
 will do your work.  When you have finished your work, push the assignment branch
 to your repository and create a pull request.  When you turn in your assignment,
 include a link to your pull request.
