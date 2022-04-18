@@ -55,7 +55,7 @@ and you will enter a similar command for each of the other three packages.
 Next, edit the test line in the scripts section of your package.json file.  It should say:
 
 ```
-"test": "mocha tests\*.js --exit",
+"test": "mocha tests/*.js --exit",
 ```
 
 Now run npm test from the terminal.  It should run a series of tests.  The tests themselves are in
