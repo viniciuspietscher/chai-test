@@ -8,15 +8,15 @@ app.post("/api/v1/people", (req, res) => {
   const { name, age } = req.body
   people.push([name, age])
   // res.json({ error: "That route is not implemented." })
-  res.json({ msg: "person added" })
+  res.status(201).json({ msg: "person added" })
 })
 
 app.get("/api/v1/people", (req, res) => {
-  res.json({ people: people })
+  res.status(200).json({ people: people })
 })
 
 app.get("/api/v1/people/:id", (req, res) => {
-  res.json({ person: people[req.params.id] })
+  res.status(200).json({ person: people[req.params.id] })
 })
 
 app.listen(3000, () => {
