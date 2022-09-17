@@ -6,6 +6,10 @@ const people = []
 
 app.post("/api/v1/people", (req, res) => {
   const { name, age } = req.body
+  if (!name) {
+    res.status(400).json({ error: "Please enter a name." })
+    return
+  }
   if (age < 0) {
     res.status(400).json({ error: "Age must be greater than 0" })
     return
